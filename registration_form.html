@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position & Relative</title>
+    <style>
+        *{
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .main-div{
+            max-width: 500px;
+            min-height: 100px;
+            background-color:white;
+            border: 2px solid gray;
+            box-shadow: 0 0 15px #c9c4c4;
+            border-radius: 15px;
+            margin: auto;
+            margin-top: 5%;
+            border: none;           
+            
+
+        }
+        
+        
+        .main-div > .row > form{
+            padding: 20px;
+            justify-content:center;
+            flex-direction: column;
+            display: flex;
+            justify-content: center;           
+            gap: 10px;
+                     
+        }
+        h1{
+            color: green;
+            font-weight: bold;
+        }
+        form > input {
+            padding: 10px;
+            border: 1px solid rgb(212, 211, 211);
+            border-radius: 5px;
+        }
+        #gender{
+            padding: 10px;
+            border: 1px solid rgb(212, 211, 211);
+            border-radius: 5px;
+        }
+        form > #submit { 
+            background-color: rgb(79, 209, 79);
+            color: white;
+        }
+        
+        
+
+    </style>
+    
+</head>
+<body>
+    <div class="main-div">
+        <div class="row">
+            <form method="post" target="_blank" action="https://giftpressstudio.com/">
+                <h1>Registration Form</h1>
+                <label>First name</label>
+                
+                <input type="text" required tooltip>
+                
+                <label>Last name</label>
+                
+                <input type="text" required>
+                
+                <label>Email</label>
+                
+                <input type="email" required>
+                
+                <label>Password</label>
+                
+                <input type="password" required>
+                
+                <label>Re-type Password</label>
+                
+                <input type="password" required>
+                
+                <label>Contact</label>
+                
+                <input type="tel" required>
+                
+                <label>Gender</label>
+                <select name="" id="gender" required>
+
+                    <option value="">--Select--</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+                <input type="submit" value="Submit" id="submit">
+            </form>
+
+        </div>
+
+    </div>
+
+
+</body>
+</html>
